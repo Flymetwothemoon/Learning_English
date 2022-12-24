@@ -1,0 +1,54 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragment.addFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="200dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Word"
+        android:id="@+id/word"
+        app:boxStrokeColor="#8BDDE6"
+        android:textColorHint="#8BDDE6"
+        app:hintTextColor="#8BDDE6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:textColor="#8BDDE6"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="200dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Translation"
+        android:id="@+id/translation"
+        app:boxStrokeColor="#8BDDE6"
+        android:textColorHint="#8BDDE6"
+        app:hintTextColor="#8BDDE6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/word">
+
+        <EditText
+            android:textColor="#8BDDE6"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/Log"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="Log"
+        android:background="@drawable/button_log"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/translation"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

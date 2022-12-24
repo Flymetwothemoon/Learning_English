@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="5dp"
+    >
+
+    <com.youth.banner.Banner
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/banner"
+        />
+
+    <TableRow
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/iv_nmet"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+
+            android:src="@drawable/nmet_selector" />
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/iv_cet4"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+
+            android:src="@drawable/cet4_selector" />
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/iv_cet6"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+
+            android:src="@drawable/cet6_selector" />
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/iv_ietsl"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+
+            android:src="@drawable/ietsl_selector" />
+    </TableRow>
+
+    <ImageView
+        android:clickable="true"
+        android:id="@+id/iv_gre"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="5dp"
+
+        android:src="@drawable/gre_selector"
+        />
+</TableLayout>
