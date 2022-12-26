@@ -40,7 +40,7 @@ dependencies {
     //Room数据库的依赖
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
-
+    //if use rxjava2 , only impl the one.
     // optional - RxJava2 support for Room
     implementation "androidx.room:room-rxjava2:$room_version"
 
