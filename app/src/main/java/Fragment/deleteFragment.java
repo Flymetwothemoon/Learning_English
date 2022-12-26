@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 
 import com.example.learning_english.R;
 
@@ -15,17 +17,18 @@ import com.example.learning_english.R;
  * Use the {@link deleteFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class deleteFragment extends Fragment {
+public class deleteFragment extends Fragment implements View.OnClickListener {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
+    private Button delete_button;
+    private EditText delete_edit;
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
+    View view;
     public deleteFragment() {
         // Required empty public constructor
     }
@@ -61,6 +64,20 @@ public class deleteFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_delete, container, false);
+        if(view==null) {
+            view = inflater.inflate(R.layout.fragment_delete, container, false);
+        }
+        init();
+        return view;
+    }
+    private void init(){
+        delete_button = view.findViewById(R.id.button_delete);
+        delete_edit = view.findViewById(R.id.delete_edit);
+        delete_button.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }
